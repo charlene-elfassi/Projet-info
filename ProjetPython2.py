@@ -118,8 +118,8 @@ def humidex():
         H.append(a)
     return H
 
-def humidexbis(T,Tr): #T:température Tr: température de rosée
-    c=5417.7530*((1/273.16)-(1/(273.15+Tr)))
+def humidexbis(T,TR): #T:température Tr: température de rosée
+    c=5417.7530*((1/273.16)-(1/(273.15+TR)))
     return T+0.5555*(6.11*(exp(c))-10)
 
 def indcorrelation (liste1, liste2):
