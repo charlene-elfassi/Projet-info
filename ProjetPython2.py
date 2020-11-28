@@ -43,9 +43,6 @@ def choix():
     choix=input('choix données: 0-noise,1-temperature,2-humidite,3-luminosite,4-co2 : ')
     return int(choix)
 
-def choix_date():
-    return 
-
 def graph():
     plt.plot(tri(conv()[0],conv()[1],conv()[2],conv()[3],conv()[4],conv()[5])[5]
              ,tri(conv()[0],conv()[1],conv()[2],conv()[3],conv()[4],conv()[5])[choix()])
